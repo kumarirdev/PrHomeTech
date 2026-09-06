@@ -1,9 +1,9 @@
 import AboutUsFaq from "@/components/AboutUsFaq";
 import AboutUsHeroSection from "@/components/AboutUsHeroSection";
 import AboutUs from "@/components/AboutUs";
-import AboutUsTestimonialSection from "@/components/AboutUsTestimonialSection";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Testimonials from "@/components/Testimonials";
 
 function page() {
   return (
@@ -11,7 +11,7 @@ function page() {
       <Navbar />
       <AboutUsHeroSection />
       <AboutUs />
-      <AboutUsTestimonialSection />
+      <Testimonials />
       <AboutUsFaq />
       <Footer />
     </>

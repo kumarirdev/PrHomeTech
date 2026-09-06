@@ -1,47 +1,120 @@
-import Image from 'next/image'
-import logoImage from '../assets/logo.jpeg'
-import { Building2, Wrench, Phone, House, UserRoundCog, } from "lucide-react";
+"use client"
+
+import Image from "next/image";
+import logoImage from "../assets/logo.jpeg";
+import { Building2, Wrench, Phone, House, UserRoundCog } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 function Navbar() {
-  return <>
 
-  <div className="w-full h-[73px] border-b border-gray-300 px-15 flex items-center justify-between sticky top-0 bg-white z-20">
-        <Image src={logoImage} className="w-[80px] h-[68px]"/>
+  // Gets the current page URL
+  // Example: "/" or "/about-us"
+  const pathname = usePathname();
 
-    <div className="flex items-center gap-10 text-[18px]">
+   // Check if the given link is currently active
+  const isActive = (href) => {
+    return pathname === href;
+  };
+  return (
+    <>
+      <div className="w-full h-[73px] border-b border-gray-300 px-15 flex items-center justify-between sticky top-0 bg-white z-20">
+        <Image src={logoImage} className="w-[80px] h-[68px]" />
+
+         <div className="flex items-center gap-10 text-[16px] font-medium">
         
-        <div className="flex items-center gap-2">
-            <House size={18} className="text-[#0236A4] font-medium"/>
-            <p className="text-[#0236A4] font-medium">Home</p>   
-        </div>
+        {/* Home */}
+        <Link
+          href="/"
+          className={`flex items-center gap-2 ${
+            isActive("/")
+              ? "font-semibold text-[#0c48ca]"
+              : "text-gray-500"
+          }`}
+        >
+          <House
+            size={18}
+            className={isActive("/") ? "text-[#0236A4]" : ""}
+          />
+          <p>Home</p>
+        </Link>
 
-        <div className="flex items-center gap-2">
-            <Building2 size={18} />
-            <p>About us</p> 
-        </div>  
-        
-        <div className="flex items-center gap-2">
-             <Wrench size={18} />
-            <p>Service</p>
-        </div>
+        {/* About Us */}
+        <Link
+          href="/about-us"
+          className={`flex items-center gap-2 ${
+            isActive("/about-us")
+              ? "font-semibold text-[#0c48ca]"
+              : "text-gray-500"
+          }`}
+        >
+          <Building2
+            size={18}
+            className={isActive("/about-us") ? "text-[#0236A4]" : ""}
+          />
+          <p>About us</p>
+        </Link>
 
-        <div className="flex items-center gap-2">
-             <UserRoundCog size={18} />
-            <p>Our Technicians</p>
-        </div>
+        {/* Service */}
+        <Link
+          href="/services"
+          className={`flex items-center gap-2 ${
+            isActive("/services")
+              ? "font-semibold text-[#0c48ca]"
+              : "text-gray-500"
+          }`}
+        >
+          <Wrench
+            size={18}
+            className={isActive("/services") ? "text-[#0236A4]" : ""}
+          />
+          <p>Service</p>
+        </Link>
 
-        <div className="flex items-center gap-2">
-             <Phone size={18} />
-            <p>Contact us</p>
-        </div>
+        {/* Technicians */}
+        <Link
+          href="/technicians"
+          className={`flex items-center gap-2 ${
+            isActive("/technicians")
+              ? "font-semibold text-[#0c48ca]"
+              : "text-gray-500"
+          }`}
+        >
+          <UserRoundCog
+            size={18}
+            className={
+              isActive("/technicians") ? "text-[#0236A4]" : ""
+            }
+          />
+          <p>Our Technicians</p>
+        </Link>
 
-    </div>
+        {/* Contact */}
+        <Link
+          href="/contact-us"
+          className={`flex items-center gap-2 ${
+            isActive("/contact-us")
+              ? "font-semibold text-[#0c48ca]"
+              : "text-gray-500"
+          }`}
+        >
+          <Phone
+            size={18}
+            className={
+              isActive("/contact-us") ? "text-[#0236A4]" : ""
+            }
+          />
+          <p>Contact us</p>
+        </Link>
+      </div>
 
-    <button className="bg-[#0236A4] text-white px-7 py-2 rounded-full font-medium">Book Now</button>
-
-  </div>
-  
-  </>
+        <button className="bg-[#0236A4] text-white px-7 py-2 rounded-full font-medium">
+          Book Now
+        </button>
+      </div>
+    </>
+  );
 }
 
 export default Navbar;
