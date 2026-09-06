@@ -1,7 +1,21 @@
+import AllService from "@/components/AllService";
+import Faq from "@/components/Faq";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import ServiceHeroSection from "@/components/ServiceHeroSection";
+import ServiceWarranty from "@/components/ServiceWarranty";
+import Testimonials from "@/components/Testimonials";
+
 function page() {
     return<>
 
-    
+    <Navbar />
+    <ServiceHeroSection />
+    <AllService />
+    <ServiceWarranty />
+    <Testimonials />
+    <Faq />
+    <Footer />
     
     </>
 }

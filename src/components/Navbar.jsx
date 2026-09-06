@@ -58,7 +58,7 @@ function Navbar() {
 
         {/* Service */}
         <Link
-          href="/services"
+          href="/service"
           className={`flex items-center gap-2 ${
             isActive("/services")
               ? "font-semibold text-[#0c48ca]"

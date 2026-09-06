@@ -1,7 +1,6 @@
 import Image from 'next/image'
-import heroImage from '../assets/HomeHeroImage.png'
 import bgImg1 from '../assets/bgImg1.jpeg'
-import bgImg2 from '../assets/bgImg2.jpeg'
+
 
 function HomeHero() {
   return <>

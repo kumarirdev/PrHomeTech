@@ -1,7 +1,7 @@
 function AboutUsHeroSection() {
   return <>
 
-    <div className="main-container h-100 bg-gradient-to-br from-[#042560] via-[#233db0] to-[#5585ec]">
+    <div className="main-container h-100 bg-gradient-to-br from-[#011f52] via-[#213dbb] to-[#5c89ea]">
         <h1 className="text-[65px] font-bold  text-center mt-5 text-white">Reliable Repairs</h1>
         <h1 className="text-[65px] font-bold text-center text-white mt-[-20px]">Better Living</h1>
         <div className="text-center mt-5 text-white text-lg w-200 m-auto">
