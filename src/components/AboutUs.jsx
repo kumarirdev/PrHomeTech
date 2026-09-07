@@ -22,7 +22,6 @@ export default function AboutUs() {
     <>
 
     <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-10">
-        <div className="h-4 w-4 text-[#0B2545]" />
         <span className="text-sm font-semibold text-[#0B2545]">
           About us
         </span>

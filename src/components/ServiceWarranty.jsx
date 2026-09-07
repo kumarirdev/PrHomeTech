@@ -43,6 +43,7 @@ function ServiceWarranty() {
 
         <section className="main-container mx-5 mt-7 overflow-hidden rounded-[28px] bg-[#26344a] px-6 py-12 text-white sm:mx-8 sm:px-10 lg:mx-15 lg:px-16 lg:py-16">
             <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 ">
+
                 <div className="max-w-xl">
                     <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#8098d5]/40 bg-[#5068a0]/30 px-3 py-1 text-[11px] font-semibold tracking-wide text-[#b5c8ff]">
                         <BadgeCheck className="h-3.5 w-3.5" />
@@ -77,7 +78,7 @@ function ServiceWarranty() {
                     <div className="pointer-events-none absolute left-1/2 top-1/2 h-32 w-32 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7d93d7]/30 blur-[1px]" />
 
                     {warrantyBenefits.map(({ icon: Icon, title, description }) => (
-                        <article
+                        <div
                             key={title}
                             className="relative min-h-36 rounded-2xl border border-[#71809b]/25 bg-[#2d3b51]/75 p-5 shadow-lg shadow-[#172235]/20 backdrop-blur-sm"
                         >
@@ -90,7 +91,7 @@ function ServiceWarranty() {
                             <p className="mt-2 text-xs leading-5 text-[#c1ccdd]">
                                 {description}
                             </p>
-                        </article>
+                        </div>
                     ))}
                 </div>
             </div>

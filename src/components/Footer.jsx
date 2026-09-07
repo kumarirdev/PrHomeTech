@@ -2,85 +2,81 @@ import Image from "next/image";
 import prLogo from "../assets/pr-logo.png";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-const footerColumns = [
-  ["Solutions", "Industries", "Terms of Service", "Privacy Policy", "MCA"],
-  ["Company", "Join our Team", "Hire us", "Careers"],
-  ["Resources", "Resources", "Blog", "Dropdown"],
-  [
-    "Support",
-    "Help Center",
-    "API Docs",
-    "Ticket System",
-    "Status Page",
-    "Contacts",
-  ],
-  ["Solutions", "Industries", "Terms of Service", "Privacy Policy", "MCA"],
-  ["Contacts", "Join our Team", "Hire us", "Careers"],
-];
-
-const socialLinks = [
-  { label: "FaFacebook", Icon: FaFacebook },
-  { label: "FaTwitter", Icon: FaTwitter },
-  { label: "FaLinkedin", Icon: FaLinkedin },
-  { label: "FaInstagram", Icon: FaInstagram },
-];
-
 function Footer() {
-  return (
-    <footer className="main-container mt-10 w-full bg-[#515a5e] ">
-      <div className="relative  mx-auto w-full overflow-hidden bg-[#293235] px-15 pb-8 pt-14 text-white ">
-        <div className="absolute -left-[5%] -top-16 h-24 w-[110%] rounded-b-[50%] bg-white  sm:-top-20 sm:h-28 " />
+  return<>
 
-        <div className="links  flex items-center mb-3 justify-between ">
-          <div className="w-[250px]">
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 text-sm font-bold"
-            >
-              <Image src={prLogo} className="w-[80px] h-[68px]" />
-            </a>
-          </div>
+  <div className="main-container bg-[#293235]  w-full mt-16">
 
-          <div className="flex flex-col gap-8 ">
-            <div className="flex gap-5 text-white lg:justify-end">
-              {socialLinks.map(({ label, Icon }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="transition-colors hover:text-[#0258D9]"
-                >
-                  <Icon size={16} strokeWidth={1.8} />
-                </a>
-              ))}
-            </div>
-          </div>
-        </div>
+    <div className="logo-container">
 
-        <nav className="flex items-start justify-between ">
-          {footerColumns.map(([title, ...links], columnIndex) => (
-            <div key={`${title}-${columnIndex}`}>
-              <h2 className="mb-4 text-[22px] font-semibold  text-[#375bcf]">
-                {title}
-              </h2>
-              <ul className="space-y-2">
-                {links.map((link) => (
-                  <li key={link}>
-                    <a
-                      href="#"
-                      className="text-[18px] leading-4 text-[#bec2c2]/60  hover:text-white"
-                    >
-                      {link}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-        </nav>
+      <div className=" px-15 py-8 flex items-center justify-between">
+      <Image src={prLogo} className="w-[80px] h-[68px]" />
+
+       <div className="flex items-center gap-5 text-white">
+         <FaFacebook className="hover:text-[#0258D9] cursor-pointer w-5 h-5" />
+         <FaInstagram className="hover:text-[#0258D9] cursor-pointer w-5 h-5" />
+         <FaLinkedin className="hover:text-[#0258D9] cursor-pointer w-5 h-5" />
+         <FaTwitter className="hover:text-[#0258D9] cursor-pointer w-5 h-5" />
+       </div>
       </div>
-    </footer>
-  );
+    </div>
+
+    <div className="content-container px-40 mb-5 flex items-start gap-25 m-auto w-fit">
+
+      <div className="first-container">
+        <h1 className="text-xl font-semibold text-[#0258D9]">Solutions</h1>
+        <div className="space-y-1 mt-3">
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Industries</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Terms of Service</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Privacy Policy</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">MCA</p>
+        </div>
+      </div>
+
+      <div className="second-container">
+        <h1 className="text-xl font-semibold text-[#0258D9]">Company</h1>
+        <div className="space-y-1 mt-3">
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Join our Team</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Hire us</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Careers</p>
+        </div>
+      </div>
+
+      <div className="third-container">
+        <h1 className="text-xl font-semibold text-[#0258D9]">Resources</h1>
+        <div className="space-y-1 mt-3">
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Blog</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Dropdown</p>
+        </div>
+      </div>
+
+      <div className="fourth-container">
+        <h1 className="text-xl font-semibold text-[#0258D9]">Support</h1>
+        <div className="space-y-1 mt-3">
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Help Center</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">API Docs</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Ticket System</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Status Page</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Contacts</p>
+        </div>
+      </div>
+
+      <div className="fifth-container">
+        <h1 className="text-xl font-semibold text-[#0258D9]">Contacts</h1>
+        <div className="space-y-1 mt-3">
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Join our Team</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Hire us</p>
+          <p className="text-[#bec2c2]/60 font-medium text-md hover:text-white cursor-pointer">Careers</p>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  </>
 }
 
 export default Footer;
+

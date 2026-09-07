@@ -31,8 +31,10 @@ function Faq() {
 
   return (
     <>
-      <div className="inline-flex w-25 items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
-        <span className="text-sm font-semibold text-[#0B2545] ml-5">FAQ</span>
+      <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
+        <span className="text-sm font-semibold text-[#0B2545] w-fit">
+          FAQ
+        </span>
       </div>
 
       <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46] mt-5">

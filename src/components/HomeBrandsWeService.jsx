@@ -30,9 +30,8 @@ function HomeBrandsWeService() {
 
   return <>
 
-    <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
-      <div className="h-4 w-4 text-[#0B2545]" />
-      <span className="text-sm font-semibold text-[#0B2545]">
+    <div className="inline-flex w-fit items-center rounded-full  bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
+      <span className="text-sm font-semibold text-[#0B2545] w-fit">
         Brands
       </span>
     </div>
@@ -43,12 +42,13 @@ function HomeBrandsWeService() {
       <div className="logos-track">
 
         {/* First set */}
-        <div className="logos-slide">
+        <div className="logos-slide ">
           {logos.map((logo, index) => (
             <Image
               key={`logo-1-${index}`}
               src={logo}
               alt={`Brand ${index + 1}`}
+            
             />
           ))}
         </div>
@@ -60,6 +60,7 @@ function HomeBrandsWeService() {
               key={`logo-2-${index}`}
               src={logo}
               alt={`Brand ${index + 1}`}
+         
             />
           ))}
         </div>
