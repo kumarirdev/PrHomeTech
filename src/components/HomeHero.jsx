@@ -12,7 +12,7 @@ import 'swiper/css/navigation';
 
 import { Navigation, Autoplay } from 'swiper/modules';
 import Image from "next/image"
-import { Check, MoveRight,Phone, ChevronRight  } from "lucide-react";
+import { Check, Phone, ChevronRight  } from "lucide-react";
 
 function HomeHero() {
   return<>

@@ -57,11 +57,6 @@ function Testimonials() {
           <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mt-5">
             What Our Customers Say
           </h2>
-
-          <p className="mx-auto mt-3 max-w-2xl text-gray-500">
-            Trusted by customers for reliable, professional and hassle-free home
-            appliance repair services.
-          </p>
         </div>
 
         {/* Swiper */}
