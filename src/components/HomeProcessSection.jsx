@@ -14,7 +14,7 @@ function HomeProcessSection() {
     <>
       <div className="text-center">
         <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-8 lg:mt-16">
-          <span className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#0B2545]">
+          <span className="text-sm font-semibold text-[#0B2545]">
             Simple Process
           </span>
         </div>
@@ -24,7 +24,7 @@ function HomeProcessSection() {
         <div className="mx-auto  ">
           {/* Heading */}
           <div className="mb-6 lg:mb-16 text-center ">
-            <h2 className="text-[20px] lg:text-4xl font-bold  tracking-tight text-[#1b2c46] sm:text-4xl">
+            <h2 className="text-[22px] lg:text-4xl font-extrabold lg:font-bold  tracking-tight text-[#1b2c46] sm:text-4xl">
               How the <br></br> process works
             </h2>
           </div>
