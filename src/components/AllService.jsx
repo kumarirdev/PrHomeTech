@@ -47,13 +47,17 @@ function AllService() {
     ];
   return <>
 
-       <div className="inline-flex items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
+       <div className="text-center">
+
+          <div className="inline-flex items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
          <span className="text-sm font-semibold text-[#0B2545] ">All Services</span>
         </div>
 
         <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46] mt-5">
           All Services, <br /> Under One Roof
         </h1>
+            
+       </div>
 
         <div className="grid grid-cols-4 p-5 gap-4 mt-7 px-15">
 

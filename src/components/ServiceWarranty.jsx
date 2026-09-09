@@ -32,13 +32,17 @@ const warrantyBenefits = [
 function ServiceWarranty() {
     return <>
 
-        <div className="inline-flex items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
+        <div className="text-center">
+
+            <div className="inline-flex items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
          <span className="text-sm font-semibold text-[#0B2545] ">Warranty</span>
         </div>
 
         <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46] mt-5">
           Guaranteed Quality, <br /> Reliable Service
         </h1>
+
+        </div>
 
 
         <section className="main-container mx-5 mt-7 overflow-hidden rounded-[28px] bg-[#26344a] px-6 py-12 text-white sm:mx-8 sm:px-10 lg:mx-15 lg:px-16 lg:py-16">

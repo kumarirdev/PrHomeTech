@@ -6,17 +6,29 @@ import Faq from "../components/Faq.jsx";
 import Footer from "@/components/Footer.jsx";
 import HomeProcessSection from "@/components/HomeProcessSection.jsx";
 import Testimonials from "@/components/Testimonials.jsx";
+import AnimatedContainer from "@/components/AnimatedContainer.jsx";
 
 function HomePage() {
   return (
     <>
       <Navbar />
       <HomeHero />
-      <HomeOurService />
-      <HomeBrandsWeService />
-      <HomeProcessSection />
-      <Testimonials />
+
+      <AnimatedContainer>
+        <HomeOurService />
+      </AnimatedContainer>
+      <AnimatedContainer>
+        <HomeBrandsWeService />
+      </AnimatedContainer>
+      <AnimatedContainer>
+        <HomeProcessSection />
+      </AnimatedContainer>
+      <AnimatedContainer>
+        <Testimonials />
+      </AnimatedContainer>
+      <AnimatedContainer>
       <Faq />
+      </AnimatedContainer>
       <Footer />
     </>
   );

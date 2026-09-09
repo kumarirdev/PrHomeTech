@@ -21,18 +21,20 @@ export default function AboutUs() {
   return (
     <>
 
-    <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-10">
-        <span className="text-sm font-semibold text-[#0B2545]">
+      <div className="text-center">
+        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-10">
+          <span className="text-sm font-semibold text-[#0B2545]">
           About us
-        </span>
-      </div>
+          </span>
+        </div>
 
-      <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46] mt-5">
-        Expert Service,
-      </h1>
-      <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46]">
+        <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46] mt-5">
+         Expert Service,
+        </h1>
+        <h1 className="faq-title text-4xl font-bold text-center text-[#1b2c46]">
         Honest Solutions.
-      </h1>
+        </h1>
+      </div>
 
       <div className="main-container grid grid-cols-12 gap-12 mx-15 mt-10">
         <div className="first-container col-span-7">

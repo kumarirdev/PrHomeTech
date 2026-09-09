@@ -12,17 +12,19 @@ import {
 function HomeProcessSection() {
   return (
     <>
-      <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
+      <div className="text-center">
+        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-6 lg:mt-16">
         <span className="text-sm font-semibold text-[#0B2545]">
           Simple Process
         </span>
       </div>
+      </div>
 
-      <section className="w-full bg-white  mt-5  px-15">
+      <section className="w-full bg-white mt-5  lg:px-15">
         <div className="mx-auto  ">
           {/* Heading */}
-          <div className="mb-16 text-center">
-            <h2 className="text-4xl font-bold tracking-tight text-[#1b2c46] sm:text-4xl">
+          <div className="mb-6 lg:mb-16 text-center ">
+            <h2 className="text-[20px] lg:text-4xl font-bold  tracking-tight text-[#1b2c46] sm:text-4xl">
               How the <br></br> process works
             </h2>
 
@@ -30,10 +32,10 @@ function HomeProcessSection() {
 
           {/* Process - section */}
 
-          <div className="relative    ">
+          <div className="relative ">
          
          {/* first curve */}
-            <div className="the-curve  absolute left-[24%] top-[55px]  h-[100px] w-[18%] ">
+            <div className="the-curve hidden lg:absolute left-[24%] top-[55px]  h-[100px] w-[18%] ">
               <svg
                 viewBox="0 0 300 100"
                 className="h-full w-full"
@@ -50,7 +52,7 @@ function HomeProcessSection() {
             </div>
 
             {/* second curve  */}
-            <div className="the-curve  absolute left-[58%] top-[55px]   h-[100px] w-[18%]  rotate-180">
+            <div className="the-curve hidden lg:absolute left-[58%] top-[55px]   h-[100px] w-[18%]  rotate-180">
               <svg
                 viewBox="0 0 300 100"
                 className="h-full  w-full"
@@ -67,7 +69,7 @@ function HomeProcessSection() {
             </div>
 
             {/* round section */}
-            <div className="relative z-10 grid grid-cols-3 gap-8 ">
+            <div className="relative z-10 grid lg:grid-cols-3 gap-8 ">
               {/* STEP 1 */}
               <div className="relative flex flex-col items-center text-center ">
                 <div className="round border h-48 w-48 flex items-center justify-center rounded-full border-dashed border-gray-400">
@@ -77,7 +79,7 @@ function HomeProcessSection() {
                   </div>
                 </div>
 
-                <h3 className="mt-10 text-xl font-semibold text-[#1b2c46]">
+                <h3 className="mt-10 text-xl font-bold lg:font-semibold text-[#1b2c46]">
                   Book a Service
                 </h3>
                 <h1 className="text-[#617288] mt-1 text-lg w-[90%] ">
@@ -96,7 +98,7 @@ function HomeProcessSection() {
                   </div>
                 </div>
 
-                <h3 className="mt-10 text-xl font-semibold text-[#1b2c46]">
+                <h3 className="mt-10 text-xl font-bold lg:font-semibold text-[#1b2c46]">
                   Technician Visits You
                 </h3>
                 <h1 className="text-[#617288] mt-1 text-lg w-[90%] ">
@@ -114,7 +116,7 @@ function HomeProcessSection() {
                   </div>
                 </div>
 
-                <h3 className="mt-10 text-xl font-semibold text-[#1b2c46]">
+                <h3 className="mt-10 text-xl font-bold lg:font-semibold text-[#1b2c46]">
                   Get It Fixed
                 </h3>
                 <h1 className="text-[#617288] mt-1 text-lg w-[90%]">

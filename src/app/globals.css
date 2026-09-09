@@ -43,14 +43,12 @@ body{
   flex-shrink: 0;
 }
 
-
 /* Logos */
 
 .logos-slide img {
   display: block;
-  width: 200px;
-  object-fit: fit;
-  height: 70px;
+  object-fit: cover;
+  border: 1px solid;
   margin: 0 40px;
   flex-shrink: 0;
 }

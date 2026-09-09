@@ -1,4 +1,5 @@
 import AllService from "@/components/AllService";
+import AnimatedContainer from "@/components/AnimatedContainer";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
@@ -11,10 +12,23 @@ function page() {
 
     <Navbar />
     <ServiceHeroSection />
-    <AllService />
-    <ServiceWarranty />
-    <Testimonials />
+    
+    <AnimatedContainer>
+      <AllService />
+    </AnimatedContainer>
+    
+    <AnimatedContainer>
+      <ServiceWarranty />
+    </AnimatedContainer>
+
+    <AnimatedContainer>
+      <Testimonials />
+    </AnimatedContainer>
+
+    <AnimatedContainer>
     <Faq />
+    </AnimatedContainer>
+    
     <Footer />
     
     </>

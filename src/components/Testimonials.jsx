@@ -45,16 +45,20 @@ const testimonials = [
 function Testimonials() {
   return (
     <>
-      <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
+      <div className="text-center">
+
+          <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
         <span className="text-sm font-semibold text-[#0B2545]">
           Testimonials
         </span>
       </div>
 
+      </div>
+
       <section className="main-container px-6 md:px-12 lg:px-16">
         {/* Heading */}
         <div className="mb-10 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl mt-5">
+          <h2 className="text-[20px] lg:text-4xl font-bold text-gray-900 md:text-4xl mt-5">
             What Our Customers Say
           </h2>
         </div>
