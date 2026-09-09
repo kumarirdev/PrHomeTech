@@ -52,7 +52,7 @@ function HomeHero() {
           </div>
 
           <div className="content w-full">
-            <h1 className="text-[20px] lg:text-[40px] font-bold  w-[100%] lg:w-[90%] m-auto">
+            <h1 className="text-[24px] font-extrabold  lg:text-[40px] lg:font-bold  w-[100%] lg:w-[90%] m-auto">
               Trusted Experts Keeping Your Home Appliances Working Perfectly
             </h1>
             <h1 className="text-[18px] text-gray-200 mt-4 hidden lg:block">

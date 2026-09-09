@@ -13,11 +13,11 @@ function HomeProcessSection() {
   return (
     <>
       <div className="text-center">
-        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-6 lg:mt-16">
-        <span className="text-sm font-semibold text-[#0B2545]">
-          Simple Process
-        </span>
-      </div>
+        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-8 lg:mt-16">
+          <span className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#0B2545]">
+            Simple Process
+          </span>
+        </div>
       </div>
 
       <section className="w-full bg-white mt-5  lg:px-15">
@@ -27,14 +27,12 @@ function HomeProcessSection() {
             <h2 className="text-[20px] lg:text-4xl font-bold  tracking-tight text-[#1b2c46] sm:text-4xl">
               How the <br></br> process works
             </h2>
-
           </div>
 
           {/* Process - section */}
 
           <div className="relative ">
-         
-         {/* first curve */}
+            {/* first curve */}
             <div className="the-curve hidden lg:absolute left-[24%] top-[55px]  h-[100px] w-[18%] ">
               <svg
                 viewBox="0 0 300 100"
@@ -74,7 +72,6 @@ function HomeProcessSection() {
               <div className="relative flex flex-col items-center text-center ">
                 <div className="round border h-48 w-48 flex items-center justify-center rounded-full border-dashed border-gray-400">
                   <div className="flex h-[60%] w-[60%] items-center justify-center rounded-full border border-dashed border-gray-200 bg-[#0258D9]/20">
-                    
                     <CalendarCheck className="text-[#0258D9]" size={34} />
                   </div>
                 </div>
@@ -93,7 +90,6 @@ function HomeProcessSection() {
               <div className="relative flex flex-col items-center text-center ">
                 <div className="round border h-48 w-48 flex items-center justify-center rounded-full border-dashed border-gray-400">
                   <div className="flex h-[60%] w-[60%] items-center justify-center rounded-full border border-dashed border-gray-200 bg-[#0258D9]/20">
-                    
                     <UserRoundCog className="text-[#0258D9]" size={34} />
                   </div>
                 </div>
@@ -111,7 +107,6 @@ function HomeProcessSection() {
               <div className="relative flex flex-col items-center text-center ">
                 <div className="round border h-48 w-48 flex items-center justify-center rounded-full border-dashed border-gray-400">
                   <div className="flex h-[60%] w-[60%] items-center justify-center rounded-full border border-dashed border-gray-200 bg-[#0258D9]/20">
-                 
                     <CircleCheckBig className="text-[#0258D9]" size={34} />
                   </div>
                 </div>

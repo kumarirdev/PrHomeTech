@@ -31,13 +31,13 @@ function HomeBrandsWeService() {
   return <>
 
     <div className="text-center">
-      <div className="inline-flex w-fit items-center rounded-full  bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
+      <div className="inline-flex w-fit items-center rounded-full  bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-8 lg:mt-16">
         <span className="text-sm font-semibold text-[#0B2545] w-fit">
            Brands
         </span>
       </div>
 
-      <h1 className="text-[20px] lg:text-4xl font-bold text-[#1b2c46] text-center mt-5">We Repair <br /> What Keeps Your Home Running</h1>
+      <h1 className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#1b2c46] text-center mt-5">We Repair <br /> What Keeps Your Home Running</h1>
     </div>
     
 

@@ -46,13 +46,11 @@ function Testimonials() {
   return (
     <>
       <div className="text-center">
-
-          <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-16">
-        <span className="text-sm font-semibold text-[#0B2545]">
-          Testimonials
-        </span>
-      </div>
-
+        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-4 py-1.5 mt-8 lg:mt-16">
+          <span className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#0B2545]">
+            Testimonials
+          </span>
+        </div>
       </div>
 
       <section className="main-container px-6 md:px-12 lg:px-16">

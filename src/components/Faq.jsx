@@ -32,9 +32,8 @@ function Faq() {
   return (
     <>
       <div className="text-center">
-
-        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-16">
-          <span className="text-sm font-semibold text-[#0B2545] w-fit">
+        <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-8 lg:mt-16">
+          <span className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#0B2545] w-fit">
             FAQ
           </span>
         </div>
@@ -85,8 +84,11 @@ function Faq() {
                     onClick={() => setOpenQuestion(isOpen ? -1 : index)}
                   >
                     <span>{item.question}</span>
-                    <div className={`w-8 rounded-full flex items-center justify-center  h-8  ${isOpen ? "bg-white text-[#002850]" : " bg-[#002850] text-white "} `}>{isOpen ? <Minus size={16}/> : <Plus size={16}/>}</div>
-                    
+                    <div
+                      className={`w-8 rounded-full flex items-center justify-center  h-8  ${isOpen ? "bg-white text-[#002850]" : " bg-[#002850] text-white "} `}
+                    >
+                      {isOpen ? <Minus size={16} /> : <Plus size={16} />}
+                    </div>
                   </button>
                   {isOpen && (
                     <p
