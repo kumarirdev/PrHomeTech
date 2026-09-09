@@ -33,16 +33,16 @@ function Faq() {
     <>
       <div className="text-center">
         <div className="inline-flex w-fit items-center rounded-full bg-gradient-to-r m-auto from-[#1d73a8] via-[#85c1e9d1] to-[#fdfdfd00] px-5 py-1.5 mt-8 lg:mt-16">
-          <span className="text-[22px] lg:text-4xl font-extrabold lg:font-bold text-[#0B2545] w-fit">
+          <span className="text-sm font-semibold text-[#0B2545] w-fit">
             FAQ
           </span>
         </div>
       </div>
 
-      <h1 className="faq-title text-[20px] lg:text-4xl font-bold text-center text-[#1b2c46] mt-5">
+      <h1 className="faq-title text-[22px] lg:text-4xl font-extrabold lg:font-bold text-center text-[#1b2c46] mt-5">
         Your Questions,
       </h1>
-      <h1 className="faq-title text-[20px] lg:text-4xl font-bold text-center text-[#1b2c46]">
+      <h1 className="faq-title text-[22px] lg:text-4xl font-extrabold lg:font-bold font-bold text-center text-[#1b2c46]">
         Our Clear Answers
       </h1>
 
