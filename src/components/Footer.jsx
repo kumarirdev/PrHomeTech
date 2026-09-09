@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 function Footer() {
   return<>
 
-  <div className="foooter-main-container  bg-gradient-to-r from-[#011d3b] via-[#002b55] to-[#001024] mt-16 px-4 lg:px-15 py-15 grid grid-cols-12 lg:grid-cols-12 lg:gap-12 ">
+  <div className="foooter-main-container  bg-gradient-to-r from-[#011d3b] via-[#002b55] to-[#001024] mt-16 px-4 lg:px-15 py-15 grid grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-12 ">
 
     {/* First Section */}
 
@@ -19,7 +19,7 @@ function Footer() {
         
         {/* Content */}
        <div className="content">
-         <h1 className="text-[#B4C1D1] py-4 text-lg font-medium">Keeping homes and businesses in  Tempe, AZ comfortable year-round  with dependable heating and coding.</h1>
+         <h1 className="text-[#B4C1D1] py-4 text-md md:text-lg font-medium">Keeping homes and businesses in  Tempe, AZ comfortable year-round  with dependable heating and coding.</h1>
        </div>
 
         {/* Icon */}
@@ -47,8 +47,8 @@ function Footer() {
 
     {/* Second Section */}
 
-    <div className=" space-y-3 text-lg col-span-6 lg:col-span-3  ">
-      <h1 className="text-2xl font-bold text-white">Quick Links</h1>
+    <div className=" space-y-3  lg:text-lg col-span-6 lg:col-span-3  ">
+      <h1 className=" text-lg lg:text-2xl font-bold text-white">Quick Links</h1>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">Home</p>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">About us</p>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">Service</p>
@@ -58,8 +58,8 @@ function Footer() {
 
     {/* Third Section */}
 
-    <div className=" space-y-3 text-lg col-span-6 lg:col-span-3 ">
-      <h1 className="text-2xl font-bold text-white">Our Services</h1>
+    <div className=" space-y-3 lg:text-lg col-span-6 lg:col-span-3 ">
+      <h1 className=" text-lg lg:text-2xl font-bold text-white">Our Services</h1>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">TV Repair</p>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">Fridge Repair</p>
       <p className="text-[#B4C1D1]  font-medium cursor-pointer hover:text-white">Air Conditioner Repair</p>
@@ -69,9 +69,9 @@ function Footer() {
     {/* Fourth Section */}
 
     <div className="space-y-3 col-span-12 lg:col-span-3">
-      <h1 className="text-2xl font-bold text-white ">Contact Info</h1>
+      <h1 className="lg:text-2xl font-bold text-white ">Contact Info</h1>
 
-      <div className="flex items-center text-lg gap-2  ">
+      <div className="flex items-center lg:text-lg gap-2  ">
         <div className=" border-white rounded-full p-1.5 hover:bg-gray-500 hover:border-none">
           <Phone className="w-6 h-6 text-lg text-[#B4C1D1] cursor-pointer "/>
         </div>
