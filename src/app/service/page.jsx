@@ -10,26 +10,13 @@ import Testimonials from "@/components/Testimonials";
 function page() {
     return<>
 
-    <Navbar />
-    <ServiceHeroSection />
-    
-    <AnimatedContainer>
+      <Navbar />
+      <ServiceHeroSection />
       <AllService />
-    </AnimatedContainer>
-    
-    <AnimatedContainer>
       <ServiceWarranty />
-    </AnimatedContainer>
-
-    <AnimatedContainer>
       <Testimonials />
-    </AnimatedContainer>
-
-    <AnimatedContainer>
-    <Faq />
-    </AnimatedContainer>
-    
-    <Footer />
+      <Faq />
+      <Footer />
     
     </>
 }

@@ -11,18 +11,9 @@ function page() {
     <>
       <Navbar />
       <AboutUsHeroSection />
-
-      <AnimatedContainer>
-        <AboutUs />
-      </AnimatedContainer>
-
-      <AnimatedContainer>
-        <Testimonials />
-      </AnimatedContainer>
-
-      <AnimatedContainer>
-         <Faq />
-      </AnimatedContainer>
+      <AboutUs />
+      <Testimonials />
+      <Faq />
       <Footer />
     </>
   );
