@@ -6,7 +6,7 @@ import { Phone, Mail, MapPin } from "lucide-react";
 function Footer() {
   return<>
 
-  <div className="foooter-main-container  bg-gradient-to-r from-[#011d3b] via-[#002b55] to-[#001024] mt-16 px-4 lg:px-15 py-15 grid grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-12 mt-8 lg:mt-16 ">
+  <div className="foooter-main-container  bg-gradient-to-r from-[#011d3b] via-[#002b55] to-[#001024]  px-4 lg:px-15 py-15 grid grid-cols-12 lg:grid-cols-12 gap-5 lg:gap-12 mt-8 lg:mt-16 ">
 
     {/* First Section */}
 
